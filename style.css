@@ -8,14 +8,152 @@
     --red: hsl(0, 36%, 70%);
     --soft-red: hsl(0, 93%, 68%);
     ---dark-red: hsl(0, 6%, 24%);   
-    --gradient: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
-    --gradient2: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
 }
 
 body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-    text{
+.l-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.l-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover;
+}
+
+
+.l-text__wrapper{
+    width: 500px;
+}
+
+.c-logo{
+    margin-bottom: 100px;
+}
+
+.c-image__mobile{
+    display: none;
+}
+
+.c-h1{
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.c-h1__black{
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.c-paragraph{
+    margin: 36px 0;
+    color: var(--red);
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+
+.c-label{
+    position: relative;
+}
+
+.l-submit{
+    background-image: linear-gradient(to right, hsl(0, 78%, 86%), hsl(0, 72%, 73%));
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90px;
+    top: -23px;
+    right: 0;
+    cursor: pointer;
+}
+
+.l-email{
+    padding: 20px 32px;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    border-radius: 90px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.c-email__error{
+    display:none;
+    color: var(--soft-red);
+    margin-left: 32px;
+}
+
+.c-error__icon{
+    display: none;
+    position: absolute;
+    bottom: -2px;
+    right: 25%;
+}
+
+.c-image__hero{
+    height: 100vh;
+}
+
+@media screen and (max-width:375px) {
+    .l-main{
+        background-image: none;
+    }
+    .c-image__hero{
         display: none;
     }
+
+    .c-image__mobile{
+        display: block;
+        margin-bottom: 60px;
+    }
+
+    .c-logo{
+        margin:60px 30px;
+    }
+
+    .c-h1, .c-h1__black{
+        font-size: 2.25rem;
+        text-align: center;
+    }
+
+    .c-paragraph{
+        margin: 20px 0 40px 0;
+        text-align: center;
+    }
+
+    .l-email{
+        padding: 12px 32px;
+        width: 343px;
+        margin:0 16px 8px 16px;
+    }
+    .l-submit{
+        width: 65px;
+        height: 45px;
+        top: -15px;
+        right: 5%;
+    }
+
+    .c-error__icon{
+        position: absolute;
+        bottom: -2px;
+        right: 25%;
+    }
+
+    .c-email__error{
+        margin-left: 46px;
+    }
+}
+    
