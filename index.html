@@ -24,17 +24,18 @@
               Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
             </p>
 
-            <label for="email" class="c-label">
-              <input required type="email" name="email" id="email" placeholder="Email Address" class="l-email">
-              <img src="images/icon-error.svg" alt="Icon error" class="c-error__icon">
+            <form class="l-form" id="form">
+              <label for="email" class="c-label">
+                <input  type="email" name="email" id="input" placeholder="Email Address" class="l-email">
+                <img src="images/icon-error.svg" alt="Icon error" class="c-error__icon" id="iconError">
+              </label>
+                
+              <button type="submit" class="l-submit"><img src="images/icon-arrow.svg" alt="Icon arrow"></button>
+              <small class="c-email__error" id="textError">Please provide a valid email</small>
+                
               
-              <form action="submit" class="c-form">
-                <div class="l-submit">
-                  <img src="images/icon-arrow.svg" alt="Icon Arrow" class="c-arrow_-icon">
-                </div>
-                </label>
-                <small class="c-email__error">Please provide a valid email</small>
-              </form>
+            </form>
+                
           </div>
         </main>
 
@@ -44,5 +45,7 @@
         </div>
     </div>
    </header>
+
+   <script src="script.js"></script>
 </body>
 </html>

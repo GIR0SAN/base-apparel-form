@@ -31,10 +31,11 @@ body{
 
 .l-text__wrapper{
     width: 500px;
+    position: relative;
 }
 
 .c-logo{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .c-image__mobile{
@@ -62,23 +63,21 @@ body{
     line-height: 150%;
 }
 
-.c-label{
-    position: relative;
-}
-
 .l-submit{
+    border: none;
     background-image: linear-gradient(to right, hsl(0, 78%, 86%), hsl(0, 72%, 73%));
     width: 100px;
     height: 60px;
     position: absolute;
+    right: 0;
+    bottom: 7px;px;
     z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 90px;
-    top: -23px;
-    right: 0;
     cursor: pointer;
+    box-shadow: 5px 10px 10px rgb(214, 150, 150);
 }
 
 .l-email{
@@ -99,7 +98,7 @@ body{
 .c-error__icon{
     display: none;
     position: absolute;
-    bottom: -2px;
+    bottom: 40px;
     right: 25%;
 }
 
@@ -138,12 +137,13 @@ body{
         padding: 12px 32px;
         width: 343px;
         margin:0 16px 8px 16px;
+        z-index: 0;
     }
     .l-submit{
         width: 65px;
         height: 45px;
-        top: -15px;
-        right: 5%;
+        bottom: 7px;
+        right: 3%;
     }
 
     .c-error__icon{
