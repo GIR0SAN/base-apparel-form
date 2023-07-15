@@ -70,8 +70,7 @@ body{
     height: 60px;
     position: absolute;
     right: 0;
-    bottom: 7px;px;
-    z-index: 2;
+    bottom: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
